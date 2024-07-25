@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dbsp-from-scratch"
+version = "0.1.0"
+description = ""
+authors = ["brurucy <brurucy@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.2.3"
+jupyterlab-code-formatter = "^2.2.1"
+jupyterlab-vim = "^4.1.3"
+jupyterlab-lsp = "^5.1.0"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+exclude = [ ".venv" ]
+typeCheckingMode = "strict"
